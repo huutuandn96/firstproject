@@ -1,0 +1,712 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category</title>
+    <!-- Boottrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OWl carosel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/category.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+    <link rel="stylesheet" href="./assets/css/check-out.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">  
+        <div class="navbar-brand text-center">
+            <a href="index.html"><span class="brand">LAPTOP WORLD</span></a>
+        </div>
+        <div class="search-bar col-lg-12">
+            <form class="form-inline" action="/action_page.php">
+                <div class="search-box">
+                    <div class="search-dropdown hide-in-sm">
+                        <span id="list-product">Tất cả danh mục </span>
+                        <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-list product-item">
+                            <li><a href="">Laptop MSI</a></li>
+                            <li><a href="">Laptop ASUS</a></li>
+                            <li><a href="">Laptop ACER</a></li>
+                            <li><a href="">Laptop DELL</a></li>
+                            <li><a href="">Laptop LENOVO</a></li>
+                            <li><a href="">Laptop HP</a></li>
+                            <li><a href="">Laptop MACBOOK</a></li>
+                        </ul>
+                    </div>
+                        <input class="search-input" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm...">
+                        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="navbar-right text-center">
+            <ul class="navbar-right-list">
+                <div class="user-icon"><i class="far fa-user"></i> Hữu Tuấn</div>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+                <!-- <li><a href="#"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="#"><i class="fas fa-sign-in-alt"></i> Sign in</a></li> -->
+            </ul>
+        </div>
+
+        <div class="navbar-right nav-right-mobile text-center">
+            <ul class="navbar-right-list">
+                <div class="user-icon"><i class="far fa-user"></i> Hữu Tuấn</div>
+                <li title="Sign out"><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+                <!-- <li title="Sign up"><a href="#"><i class="fas fa-user-plus"></i></a></li>
+                <li title="Sign in"><a href="#"><i class="fas fa-sign-in-alt"></i></a></li> -->
+            </ul>
+        </div>
+
+        <div class="mobile-bar-list">
+            <div class="bar-icon"><i class="fas fa-bars"></i></div>
+            <ul class="menu-list">
+                <span class="time-icon"><i class="fas fa-times"></i></span>
+                <li><h3>Danh mục sản phẩm</h3></li>
+                <li><a href="">Laptop MSI <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop ASUS <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop ACER <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop DELL <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop LENOVO <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop HP <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop APPLE <i class="fas fa-angle-right"></i></a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <!-- end - Navbar -->
+
+    <!-- Header -->
+    <header class="container-fluid hide-in-sm">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <ul class="header-navbar">
+                    <li><a href=""><i class="fas fa-th-list"></i>Danh mục sản phẩm</a>
+                        <ul class="header-subnav">
+                            <li><a href=""><i class="fas fa-laptop"></i>MSI<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>ASUS<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>ACER<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>DELL<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>LENOVO<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>HP<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>MACBOOK<i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Top sản phẩm gaming</a></li>
+                    <li><a href="">Top sản phẩm bán chạy</a></li>
+                    <li class="hide-in-tl"><a href="">Top sản phẩm văn phòng</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </header>
+
+    <!-- FILTER -->
+    <div class="container-fluid filter-session">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="filter-box">
+                    <ul class="filter-list text-center">
+                        <li class="filter-list-item active"><a href="">
+                            <img src="./assets/img/filter/open-book.svg" alt="">
+                            <span>Học tập - Văn phòng</span>
+                        </a></li>
+                        <li class="filter-list-item"><a href="">
+                            <img src="./assets/img/filter/color-wheel.svg" alt="">
+                            <span>Đồ họa - Kỹ thuật</span>
+                        </a></li>
+                        <li class="filter-list-item"><a href="">
+                            <img src="./assets/img/filter/game-controller.svg" alt="">
+                            <span>Chơi game khủng</span>
+                        </a></li>
+                        <li class="filter-list-item"><a href="">
+                            <img src="./assets/img/filter/feather.svg" alt="">
+                            <span>Mỏng nhẹ - Thời trang</span>
+                        </a></li>
+                        <li class="filter-list-item"><a href="">
+                            <img src="./assets/img/filter/laptop.svg" alt="">
+                            <span>Cao cấp - Sang trọng</span>
+                        </a></li>
+                    </ul>
+                    <div class="filter-product">
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>Hãng <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">MSI</a></li>
+                                <li><a href="">ASUS</a></li>
+                                <li><a href="">ACER</a></li>
+                                <li><a href="">DELL</a></li>
+                                <li><a href="">LENOVO</a></li>
+                                <li><a href="">HP</a></li>
+                                <li><a href="">MACBOOK</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>Giá <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">Dưới 10 Triệu</a></li>
+                                <li><a href="">10 Triệu - 15 Triệu</a></li>
+                                <li><a href="">15 Triệu - 20 Triệu</a></li>
+                                <li><a href="">20 Triệu - 25 Triệu</a></li>
+                                <li><a href="">Trên 25 Triệu</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>CPU <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">Intel Core i3</a></li>
+                                <li><a href="">Intel Core i5</a></li>
+                                <li><a href="">Intel Core i7</a></li>
+                                <li><a href="">AMD RYZEN</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>Màn hình <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">Khoảng 14 inch</a></li>
+                                <li><a href="">Khoảng 15 inch</a></li>
+                                <li><a href="">Khoảng 17 inch</a></li>
+    
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>SSD <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">128 GB</a></li>
+                                <li><a href="">256 GB</a></li>
+                                <li><a href="">512GB </a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>HDD <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">500 GB</a></li>
+                                <li><a href="">750 GB</a></li>
+                                <li><a href="">1 TB</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>RAM <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">4 GB</a></li>
+                                <li><a href="">8 GB</a></li>
+                            </ul>
+                        </div>
+                        <div class="filter-select"> 
+                            <div class="filter-key">
+                                <span>Sắp xếp <i class="fas fa-caret-down"></i></span>
+                            </div>
+                            <ul class="filter-select-list">
+                                <li><a href="">Giá: thấp đến cao</a></li>
+                                <li><a href="">Giá: cao đến thấp</a></li>
+                                <li><a href="">Sản phẩm mới nhất</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="filter-display">
+                        <ul class="filter-display-list">
+                            <span>Lọc theo:</span>
+                            <li class="filter-items"><a href="">Acer <i class="fas fa-times"></i></a></li>
+                            <li class="delete-filter"><a href="">Xóa tất cả <i class="fas fa-times"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <!-- ENDFILTER -->
+
+    <!-- CONTENT -->
+    <div class="container-fluid content-session">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="detail.html">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="detail.html">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="check-out.html">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-3 col-lg-4 col-md-4 col-sm-6">
+                        <div class="product-list-item">
+                            <a href="">
+                                <img class="product-img" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                            </a>
+                            <p>
+                                <img class="product-brand" src="./assets/img/icon/acer.svg" alt="">
+                            </p>
+                            <div class="label-brand">
+                                <span class="brand-new">Hàng mới</span>
+                                <span class="brand-sale">Khuyến mãi</span>
+                            </div>
+                            <div class="product-info">
+                                <h5><a href="">LAPTOP ACER NITRO 5 AN515-45-R0B6 
+                                    (R7-5800H, RAM 8GB, SSD</a></h5>
+                                <p>CPU: AMD Ryzen 7-5800H</p>
+                                <p>RAM: 8GB DDR4 DDR4 3200Mhz</p>
+                                <p>Ổ cứng: 512GB PCIe NVMe SSD</p>
+                            </div>
+                            <div class="product-price">
+                                <p class="del-price"><del>21.000.000đ</del> </p>
+                                <p class="net-price">19.900.000đ</p>
+                            </div>
+                            <div class="product-promo">
+                                <span>Khuyến mại</span>
+                                <p>Balo Gaming Acer SUV</p>
+                                <p>Chuột + tấm lót chuột</p>
+                            </div>
+                            <div class="product-button text-center">
+                                <div class="add-cart">
+                                    <a href=""><i class="fas fa-plus-circle"></i></a>
+                                </div>
+                                <div class="buy-btn">
+                                    <a href="">Mua ngay</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+
+     <!-- CONTACT SESSION -->
+    <div class="contact-session container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 info-list">
+                        <h4>Thông tin chung</h4>
+                        <ul>
+                            <li><a href="">Giới thiệu về Laptop World</a></li>
+                            <li><a href="">Liên hệ, góp ý</a></li>
+                            <li><a href="">Tin khuyến mãi</a></li>
+                            <li><a href="">Khách hàng doanh nghiệp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 customer-list">
+                        <h4>Hỗ trợ khách hàng</h4>
+                        <ul>
+                            <li><a href="">Chính sách trả góp</a></li>
+                            <li><a href="">Chính sách vận chuyển, giao hàng</a></li>
+                            <li><a href="">Chính sách, quy định chung</a></li>
+                            <li><a href="">Chính sách bảo hành</a></li>
+                            <li><a href="">Chính sách đổi hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 about-list">
+                        <h4><span class="red">LaptopWorld</span> Đà Nẵng</h4>
+                        <p><strong>Trung tâm bảo hành và sửa chữa:</strong> Tầng 4 - 48 Đô Đốc Bảo, Quận Cẩm lệ, Đà nẵng</p>
+                        <p><strong>Tel:</strong> (0236) 3 888 000 <strong> Mobile:</strong> (84) 0903 555 310</p>
+                        <p><strong>Email:</strong> laptopworld@gmail.com</p>
+                        <p><strong>Showroom2:</strong>48 Đô Đốc Lộc, Quận Cẩm lệ, Đà nẵng</p>
+                        <p><strong>Tel:</strong> (0236) 3 888 000 <strong> Mobile:</strong> (84) 0903 555 310</p>
+                        <p><strong>Email:</strong> laptopworld@gmail.com</p>
+                    </div>
+                    <div class="col-lg-3 care-list">
+                        <h4>Customer's Care</h4>
+                        <ul>
+                            <li><a href=""><strong>Showroom1:</strong> 48 Đô Đốc Bảo, Quận Cẩm lệ, Đà nẵng <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i></a></li>
+                            <li><a href="tel:+888000"><strong>Tel:</strong> (0236) 3 888 000  <i> (7:30 - 20:30)</i> </a></li>
+                            <li><a href="tel:+888000"><strong>Gọi sửa chữa:</strong> (0236) 3 888 000  <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i></a></li>
+                            <li><a href="tel:+888000"><strong>Gọi kỹ thuật:</strong> (0236) 3 888 000  <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i> </a></li>
+                            <li><a href="tel:+888000"><strong>Quản lý chất lượng dịch vụ:</strong> 1800 1000  <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i> </a></li>
+                            <li><a href="mailto:laptopworld@gmail.com"><strong>Email:</strong> laptopworld@gmail.com</a></li>
+                        </ul>
+                        <ul class="social-icon">
+                            <li class="fb-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="mail-icon "><a href=""><i class="fas fa-envelope"></i></a></li>
+                            <li class="ytb-icon"><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 text-center">
+                <p>© 2019. CÔNG TY TNHH CÔNG NGHỆ TIN HỌC PHI LONG. Giấy phép kinh doanh:
+                     0400127402 - do sở KH & ĐT TP. Đà Nẵng cấp ngày: 17/09/1998. Địa chỉ
+                     : 152 - 158 Hàm Nghi, Phường Thạc Gián, Quận Thanh Khê, Đà Nẵng. 
+                     Điện thoại: 02363 888 000 - 02363 816 000 - Fax: 02363 653 000. 
+                     Email: danang@philong.com.vn. Chịu trách nhiệm nội dung: Nguyễn 
+                     Khoa Long. All rights reserved. Xem chính sách sử dụng web.</p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </footer>
+    <!-- ENDFOOTER -->
+
+    <!-- To TOP BUTTON -->
+    <div id="toTop" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- END TO TOP BUTTON -->
+
+    <!-- DARK TRASPARENT BACKGROUND -->
+    <div class="dark-filter">
+    </div>
+
+    <!-- SHOPPING CART -->
+    <div class="shopping-cart">
+        <div class="cart-items">0</div>
+        <div class="cart-box">
+            <div class="cart-icon">
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <div class="cart-product">
+                <div class="cart-product-list">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="product-pic">
+                                    <a href="detail.html">
+                                        <img width="70px" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                                    </a>
+                                </td>
+                                <td class="product-text">
+                                    <a href="detail.html">
+                                        <div class="product-info">
+                                            <h5>LAPTOP ASUS GAMING</h5>
+                                            <p>1 x 21.000.000đ</p>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="product-price">21.000.000</td>
+                                <td class="time-close"><a href=""><i class="fas fa-times"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="product-pic">
+                                    <a href="">
+                                        <img width="70px" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                                    </a>
+                                </td>
+                                <td class="product-text">
+                                    <a href="">
+                                        <div class="product-info">
+                                            <h5>LAPTOP ASUS GAMING</h5>
+                                            <p>1 x 21.000.000đ</p>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="product-price">21.000.000</td>
+                                <td class="time-close"><a href=""><i class="fas fa-times"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-total-price">
+                    <span>Total:</span>
+                    <h5>42.000.000đ</h5>
+                </div>
+                <div class="cart-detail">
+                    <a href="check-out.html">Chi tiết giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/detail.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+/* Trans Policy */
+.transport-policy-box,
+.common-policy-box,
+.guarantee-policy-box,
+.back-policy-box {
+    background-color: #fff;
+    padding: 30px 24px;
+    margin-top: 20px;
+}
+
+.transport-policy-box h5,
+.common-policy-box h5,
+.guarantee-policy-box h5,
+.back-policy-box h5 {
+    color: #e5101d;
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.transport-policy-box h3,
+.common-policy-box h3 {
+    font-size: 28px;
+}
+
+.transport-policy-box .trans-detail,
+.guarantee-policy-box .guarantee-detail,
+.back-policy-box .back-detail li {
+    margin-left: 42px;
+}
+
+.transport-policy-box .trans-detail li,
+.guarantee-policy-box .guarantee-detail li,
+.back-policy-box .back-detail li {
+    line-height: 32px;
+    font-size: 17px;
+}
+.transport-policy-box .ltw-brand {
+    color: #e5101d;
+}
+
+/* COMMON POLICY */
+
+.common-policy-box p {
+    margin: 12px 0;
+    line-height: 30px;
+    font-size: 17px;
+    text-align: justify;
+}
+
+.common-policy-box .ltw-url {
+    color: #e5101d;
+    text-decoration: none;
+}
+
+/* Guarantee policy */
+
+/* BACK policy */
+
+.back-policy-box h3 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.back-policy-box .back-detail p {
+    color: #333;
+    text-align: justify;
+    font-size: 17px;
+    font-weight: 500;
+    margin: 8px 0;
+}
+

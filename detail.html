@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail</title>
+    <!-- Boottrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- OWl carosel -->
+    <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
+    <script src="owlcarousel/owl.carousel.min.js"></script>
+    <!-- ANIMATE CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <!-- My CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/category.css">
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="./assets/css/detail.css">
+    <link rel="stylesheet" href="./assets/css/check-out.css">
+
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">  
+        <div class="navbar-brand text-center">
+            <a href="index.html"><span class="brand">LAPTOP WORLD</span></a>
+        </div>
+        <div class="search-bar col-lg-12">
+            <form class="form-inline" action="/action_page.php">
+                <div class="search-box">
+                    <div class="search-dropdown hide-in-sm">
+                        <span id="list-product">Tất cả danh mục </span>
+                        <i class="fas fa-caret-down"></i>
+                        <ul class="dropdown-list product-item">
+                            <li><a href="">Laptop MSI</a></li>
+                            <li><a href="">Laptop ASUS</a></li>
+                            <li><a href="">Laptop ACER</a></li>
+                            <li><a href="">Laptop DELL</a></li>
+                            <li><a href="">Laptop LENOVO</a></li>
+                            <li><a href="">Laptop HP</a></li>
+                            <li><a href="">Laptop MACBOOK</a></li>
+                        </ul>
+                    </div>
+                        <input class="search-input" type="text" placeholder="Nhập tên sản phẩm, từ khóa cần tìm...">
+                        <button class="search-btn" type="submit"><i class="fas fa-search"></i></button>
+                </div>
+            </form>
+        </div>
+        <div class="navbar-right text-center">
+            <ul class="navbar-right-list">
+                <div class="user-icon"><i class="far fa-user"></i> Hữu Tuấn</div>
+                <li><a href="#"><i class="fas fa-sign-out-alt"></i>Sign out</a></li>
+                <!-- <li><a href="#"><i class="fas fa-user-plus"></i> Sign Up</a></li>
+                <li><a href="#"><i class="fas fa-sign-in-alt"></i> Sign in</a></li> -->
+            </ul>
+        </div>
+
+        <div class="navbar-right nav-right-mobile text-center">
+            <ul class="navbar-right-list">
+                <div class="user-icon"><i class="far fa-user"></i> Hữu Tuấn</div>
+                <li title="Sign out"><a href="#"><i class="fas fa-sign-out-alt"></i></a></li>
+                <!-- <li title="Sign up"><a href="#"><i class="fas fa-user-plus"></i></a></li>
+                <li title="Sign in"><a href="#"><i class="fas fa-sign-in-alt"></i></a></li> -->
+            </ul>
+        </div>
+
+        <div class="mobile-bar-list">
+            <div class="bar-icon"><i class="fas fa-bars"></i></div>
+            <ul class="menu-list">
+                <span class="time-icon"><i class="fas fa-times"></i></span>
+                <li><h3>Danh mục sản phẩm</h3></li>
+                <li><a href="">Laptop MSI <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop ASUS <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop ACER <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop DELL <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop LENOVO <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop HP <i class="fas fa-angle-right"></i></a></li>
+                <li><a href="">Laptop APPLE <i class="fas fa-angle-right"></i></a></li>
+               
+            </ul>
+        </div>
+    </nav>
+    <!-- end - Navbar -->
+
+    <!-- Header -->
+    <header class="container-fluid hide-in-sm">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <ul class="header-navbar">
+                    <li><a href=""><i class="fas fa-th-list"></i>Danh mục sản phẩm</a>
+                        <ul class="header-subnav">
+                            <li><a href=""><i class="fas fa-laptop"></i>MSI<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>ASUS<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>ACER<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>DELL<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>LENOVO<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>HP<i class="fas fa-angle-right"></i></a></li>
+                            <li><a href=""><i class="fas fa-laptop"></i>MACBOOK<i class="fas fa-angle-right"></i></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Top sản phẩm gaming</a></li>
+                    <li><a href="">Top sản phẩm bán chạy</a></li>
+                    <li class="hide-in-tl"><a href="">Top sản phẩm văn phòng</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </header>
+
+    <!-- CONTENT PRODUCT  SESSION-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="product-detail-session">
+                    <div class="product-title-box">
+                        <h4>Laptop MSI Pulse GL66 11UDK 255VN 
+                            (Core i7-11800H, Ram 16GB, SSD 512GB, 
+                            VGA 3050Ti 4GB, Màn hình 15.6inch FHD 144Hz, 
+                            Win 10)</h4>
+                        <span>Tình trạng: Còn hàng</span>
+                        <span>Bảo hành: 24 tháng</span>
+                    </div> 
+                    <div class="product-detail">
+                        <div class="row">
+                            <div class="col-lg-5 text-center">
+                                <img class="img-card" src="./assets/img/products/msi/bravo15-1.jpg" alt="">
+                                <div class="owl-carousel owl-theme product-wrapper">
+                                    <div class="item">
+                                        <img class="wrapper-img" src="./assets/img/products/msi/bravo15-2.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="wrapper-img" src="./assets/img/products/msi/bravo15-3.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="wrapper-img" src="./assets/img/products/msi/bravo15-4.jpg" alt="">
+                                    </div>
+                                    <div class="item">
+                                        <img class="wrapper-img" src="./assets/img/products/msi/bravo15-5.jpg" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 product-detail-box">
+                                <div class="product-detail-info clear">
+                                        <h4>Thông tin sản phẩm:</h4>
+                                        <p>CPU: AMD Ryzen 5 4600H</p>
+                                        <p>RAM: 8GB (8GBx1) DDR4 3200MHz</p>
+                                        <p>Ổ cứng: 256GB NVMe PCIe SSD</p>
+                                        <p>Card đồ hoạ: AMD Radeon RX5300M 3GB</p>
+                                        <p>Màn hình: 15.6 inch FHD (1920*1080)</p>
+                                        <p>Hệ điều hành: Windows 10 Home SL 64-bit
+                                        <div class="clear"></div>
+                                        <a href="">Đọc thêm</a>
+                                </div>
+                                <div class="product-detail-price">
+                                    <p class="del-detail-price">Giá chính hãng:<del>19.490.000</del></p>
+                                    <p class="detail-price">Giá bán: <span> 18.990.000</span></p>
+                                </div>
+                                <div class="product-detail-button">
+                                    <div class="add-cart">
+                                        <a href=""><i class="fas fa-plus-circle"></i></a>
+                                    </div>
+                                    <div class="buy-btn">
+                                        <a href="">Mua ngay</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-3">
+                                <div class="help-box">
+                                    <ul>
+                                        <h5>Trợ giúp:</h5>
+                                        <li><a href="">Chính sách bảo hành</a></li>
+                                        <li><a href="">Chính sách đổi, trả lại hàng</a></li>
+                                    </ul>
+
+                                    <ul>
+                                        <h5>Điện thoại tư vấn - đặt hàng:</h5>
+                                        <li>Chính sách bảo hành</li>
+                                        <li>Chính sách đổi, trả lại hàng</li>
+                                    </ul>
+
+                                    <ul>    
+                                        <h5>Địa chỉ mua hàng:</h5>
+                                        <li>48 Đô Đốc Bảo, Đà Nẵng</li>
+                                        <li>38 Đô Đốc Lộc, Đà Nẵng</a></li>
+                                    </ul>
+                                </div>
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3835.1487814974726!2d108.2119694152835!3d16.005768645385935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31421a17d6259319%3A0xfd29e221a71e09ff!2zNDggxJDDtCDEkOG7kWMgQuG6o28sIEhvw6AgWHXDom4sIEPhuqltIEzhu4csIMSQw6AgTuG6tW5nIDU1MDAwMCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1622888949563!5m2!1svi!2s" width="100%" height="250px" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="related-product">
+                    <!-- Nav tabs -->
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                        <a class="nav-link active" data-toggle="tab" href="#related-pd">Sản phẩm tương tự</a>
+                        </li>
+                        <li class="nav-item">
+                        <a class="nav-link" data-toggle="tab" href="#same-brand">Sản phẩm cùng hãng</a>
+                        </li>
+                    </ul>
+                    
+                    <!-- Tab panes -->
+                    <div class="tab-content">
+                        <div class="tab-pane container-fluid active" id="related-pd">
+                            <div class="owl-carousel owl-theme related-pd">
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane container-fluid fade" id="same-brand">
+                            <div class="owl-carousel owl-theme same-brand">
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                                <div class="item">
+                                    <div class="suggest-product">
+                                        <a href=""><img src="./assets/img/products/msi/bravo15-2.jpg" alt=""></a> 
+                                        <a href="">Laptop MSI Pulse GL66 11UDK 255VN (Core i7-11800H/Ram 16GB/SSD 512GB/VGA 3050Ti</a>
+                                        <p>32.990.000đ</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="more-detail-box">
+                    <div class="row">
+                        <div class="col-lg-8 col-md-12 ">
+                            <div class="dac-diem">
+                                <h5>Đặc điểm nổi bật</h5>
+                                <div class="dac-diem-content">  
+                                    <p>Hành trình của bạn bắt đầu từ đây. 
+                                        MSI Pulse GL66 11UDK 255VN trang bị
+                                         i7 11800H và RTX 3050Ti. Bộ giáp 
+                                         kim loại màu xám titan cùng các đường
+                                          viền cá tính chính là thiết kế lí tưởng
+                                           cho các fan của phong cách rắn rỏi
+                                        và đậm chất viễn tưởng.</p>
+                                    <img src="https://philong.com.vn/media/lib/24679_1.jpg" alt="">
+                                    <h5>SỨC MẠNH TIỀM ẨN</h5>
+                                    <p>Với lớp vỏ kim loại cùng các đường viền góc cạnh,
+                                         mang phong cách thiết kế viễn tưởng. Khu vực xung 
+                                         quanh bàn phím được trang trí giống như giao diện
+                                          hiển thị ngoại vi trên bảng điều khiển. Thiết kế
+                                           hình lục giác ở mặt đáy lấy cảm hứng từ các bộ phim
+                                            kinh điển. Mô phỏng lại cảnh những chiến đấu cơ liên
+                                             ngân hà đang xuất trận trên các tinh cầu xa xôi. 
+                                             Sở hữu ngay Pulse GL series và giải phóng sức mạnh
+                                              tiềm ẩn bên trong.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="thong-so">
+                                <h5>Thông số kỹ thuật</h5>
+                                <div class="thong-so-content">
+                                    <table>
+                                        <tbody>
+                                            <tr>
+                                                <td>Hãng sản xuất</td>
+                                                <td>MSI</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tên sản phẩm</td>
+                                                <td>MSI Pulse GL66 11UDK 255VN</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bộ vi xử lý</td>
+                                                <td>Intel® Core™ i7-11800H</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Tốc độ</td>
+                                                <td>upto 4.60GHz, 8 cores 16 threads</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Bộ nhớ trong (RAM)</td>
+                                                <td>16GB (8GB x 2) DDR4 3200MHz</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Dung lượng</td>
+                                                <td>512GB NVMe PCIe Gen3x4 SSD (new)</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Màn hình</td>
+                                                <td>15.6 inch FHD (1920*1080), 144Hz 72%NTSC IPS-Level, close to 100%sRGB</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Card màn hình</td>
+                                                <td>NVidia Geforce RTX 3050 Ti 4GB GDDR6</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Trọng Lượng</td>
+                                                <td>2.3 kg</td>
+                                            </tr>
+                                            <tr>
+                                                <td>Màu sắc</td>
+                                                <td>Xám Titan</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <!-- END CONTENT -->
+
+     <!-- CONTACT SESSION -->
+    <div class="contact-session container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10">
+                <div class="row">
+                    <div class="col-lg-2 col-md-6 info-list">
+                        <h4>Thông tin chung</h4>
+                        <ul>
+                            <li><a href="">Giới thiệu về Laptop World</a></li>
+                            <li><a href="">Liên hệ, góp ý</a></li>
+                            <li><a href="">Tin khuyến mãi</a></li>
+                            <li><a href="">Khách hàng doanh nghiệp</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-3 col-md-6 customer-list">
+                        <h4>Hỗ trợ khách hàng</h4>
+                        <ul>
+                            <li><a href="">Chính sách trả góp</a></li>
+                            <li><a href="">Chính sách vận chuyển, giao hàng</a></li>
+                            <li><a href="">Chính sách, quy định chung</a></li>
+                            <li><a href="">Chính sách bảo hành</a></li>
+                            <li><a href="">Chính sách đổi hàng</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-4 about-list">
+                        <h4><span class="red">LaptopWorld</span> Đà Nẵng</h4>
+                        <p><strong>Trung tâm bảo hành và sửa chữa:</strong> Tầng 4 - 48 Đô Đốc Bảo, Quận Cẩm lệ, Đà nẵng</p>
+                        <p><strong>Tel:</strong> (0236) 3 888 000 <strong> Mobile:</strong> (84) 0903 555 310</p>
+                        <p><strong>Email:</strong> laptopworld@gmail.com</p>
+                        <p><strong>Showroom2:</strong> 48 Đô Đốc Lộc, Quận Cẩm lệ, Đà nẵng</p>
+                        <p><strong>Tel:</strong> (0236) 3 888 000 <strong> Mobile:</strong> (84) 0903 555 310</p>
+                        <p><strong>Email:</strong> laptopworld@gmail.com</p>
+                    </div>
+                    <div class="col-lg-3 care-list">
+                        <h4>Customer's Care</h4>
+                        <ul>
+                            <li><a href=""><strong>Showroom1:</strong> 48 Đô Đốc Bảo, Quận Cẩm lệ, Đà nẵng <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i></a></li>
+                            <li><a href="tel:+888000"><strong>Tel:</strong> (0236) 3 888 000  <i> (7:30 - 20:30)</i> </a></li>
+                            <li><a href="tel:+888000"><strong>Gọi sửa chữa:</strong> (0236) 3 888 000  <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i></a></li>
+                            <li><a href="tel:+888000"><strong>Gọi kỹ thuật:</strong> (0236) 3 888 000  <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i> </a></li>
+                            <li><a href="tel:+888000"><strong>Quản lý chất lượng dịch vụ:</strong> 1800 1000  <i> (Giờ LV: 7:30 - 11:30 và 13:30 - 17:30)</i> </a></li>
+                            <li><a href="mailto:laptopworld@gmail.com"><strong>Email:</strong> laptopworld@gmail.com</a></li>
+                        </ul>
+                        <ul class="social-icon">
+                            <li class="fb-icon"><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                            <li class="mail-icon "><a href=""><i class="fas fa-envelope"></i></a></li>
+                            <li class="ytb-icon"><a href=""><i class="fab fa-youtube"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </div>
+    <!-- END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="container-fluid">
+        <div class="row">
+            <div class="col-lg-1"></div>
+            <div class="col-lg-10 text-center">
+                <p>© 2019. CÔNG TY TNHH CÔNG NGHỆ TIN HỌC PHI LONG. Giấy phép kinh doanh:
+                     0400127402 - do sở KH & ĐT TP. Đà Nẵng cấp ngày: 17/09/1998. Địa chỉ
+                     : 152 - 158 Hàm Nghi, Phường Thạc Gián, Quận Thanh Khê, Đà Nẵng. 
+                     Điện thoại: 02363 888 000 - 02363 816 000 - Fax: 02363 653 000. 
+                     Email: danang@philong.com.vn. Chịu trách nhiệm nội dung: Nguyễn 
+                     Khoa Long. All rights reserved. Xem chính sách sử dụng web.</p>
+            </div>
+            <div class="col-lg-1"></div>
+        </div>
+    </footer>
+    <!-- ENDFOOTER -->
+
+    <!-- To TOP BUTTON -->
+    <div id="toTop" title="Go to top">
+        <i class="fas fa-chevron-up"></i>
+    </div>
+    <!-- END TO TOP BUTTON -->
+
+    <!-- DARK TRASPARENT BACKGROUND -->
+    <div class="dark-filter">
+    </div>
+
+    <!-- SHOPPING CART -->
+    <div class="shopping-cart">
+        <div class="cart-items">0</div>
+        <div class="cart-box">
+            <div class="cart-icon">
+                <i class="fas fa-cart-plus"></i>
+            </div>
+            <div class="cart-product">
+                <div class="cart-product-list">
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td class="product-pic">
+                                    <a href="">
+                                        <img width="70px" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                                    </a>
+                                </td>
+                                <td class="product-text">
+                                    <a href="">
+                                        <div class="product-info">
+                                            <h5>LAPTOP ASUS GAMING</h5>
+                                            <p>1 x 21.000.000đ</p>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="product-price">21.000.000</td>
+                                <td class="time-close"><a href=""><i class="fas fa-times"></i></a></td>
+                            </tr>
+                            <tr>
+                                <td class="product-pic">
+                                    <a href="">
+                                        <img width="70px" src="https://cdn.tgdd.vn/Files/2015/11/26/747028/b008i38hec-2.jpg" alt="">
+                                    </a>
+                                </td>
+                                <td class="product-text">
+                                    <a href="">
+                                        <div class="product-info">
+                                            <h5>LAPTOP ASUS GAMING</h5>
+                                            <p>1 x 21.000.000đ</p>
+                                        </div>
+                                    </a>
+                                </td>
+                                <td class="product-price">21.000.000</td>
+                                <td class="time-close"><a href=""><i class="fas fa-times"></i></a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="cart-total-price">
+                    <span>Total:</span>
+                    <h5>42.000.000đ</h5>
+                </div>
+                <div class="cart-detail">
+                    <a href="">Chi tiết giỏ hàng</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- SCRIPT -->
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/detail.js"></script>
+    <script src="./assets/js/checkout.js"></script>
+</body>
+</html>
